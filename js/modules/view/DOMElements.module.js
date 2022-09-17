@@ -82,10 +82,11 @@ export const DOMElements = {
 			return button;
 		},
 
-		tableRow : (obj, headline) => {
+		tableRow : (obj, params) => {
 			let row = document.createElement('div');
 			row.classList.add('table_row');
-			if (headline) {
+
+			if (params.headline) {
 				row.classList.add('table_headline');
 			}
 			
@@ -95,10 +96,10 @@ export const DOMElements = {
 				let item = document.createElement('div');
 				item.classList.add('table_row-item');
 
-				// Adding an icon to the 'Name' item
-
-				if (!headline && i == 0) {
-					let iconName = arr[2][1].toLowerCase();
+				//Adding an icon to the 'Name' item
+				if (!params.headline && i == 0) {
+					console.log();
+					let iconName = obj.category.toLowerCase();
 					iconName = iconName.replace(/ /ig, '_')
 					let icon = DOMElements.newTableRow.roundedIcon(iconName);
 					item.append(icon);
@@ -110,22 +111,26 @@ export const DOMElements = {
 				paragraph.innerText = `${arr[i][1]}`
 				row.append(item);
 			}
-			let tableButtons = document.createElement('div');
-			tableButtons.classList.add('table_row-item');
-			if(headline){
-				tableButtons.classList.add('table_headline-buttons');
-			}
-			tableButtonsData.forEach(el => {
-				let button = DOMElements.newTableRow.tableButton(el);
-				tableButtons.append(button);
-			});
 			
-			row.append(tableButtons);
+			if (params.buttons) {
+				let tableButtons = document.createElement('div');
+				tableButtons.classList.add('table_row-item');
+				tableButtons.classList.add('table_row-buttons');
+				if(params.headline){
+					tableButtons.classList.add('table_headline-buttons');
+				}
+				tableButtonsData.forEach(el => {
+					let button = DOMElements.newTableRow.tableButton(el);
+					tableButtons.append(button);
+				});
+				
+				row.append(tableButtons);
+			}
 
 	
 			return row;
 		},
-	}
-	
+	},
+
 };
 

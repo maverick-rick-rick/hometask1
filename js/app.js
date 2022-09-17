@@ -1,15 +1,14 @@
-import {newNoteForm, newNoteTable} from "./modules/render/render.module.js";
+import {newNoteForm, newNoteTable, newQuantityTable} from "./modules/render/render.module.js";
 
 document.addEventListener('DOMContentLoaded', () => {
 
 	//Some useful variables
-
-	console.log('asdasd')
 	
 	const popupWindow = document.querySelector('.popup');
 	const popupCloseBtn = document.getElementById('popup_close');
 	const newNoteBtn = document.getElementById('add_new_note');
 	const noteList = document.querySelector('.note_list > .container');
+	const noteCategories = document.querySelector('.note_categories > .container');
 
 	//Rendering table with existing notes
 
@@ -18,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			let el = noteList.querySelector('.table_headline-buttons');
 			el.removeChild(el.firstChild)
 		}())
+
+		//Rendering table with notes quantity
+
+		noteCategories.append(newQuantityTable);
 
 
 	// "Adding new note" functionality

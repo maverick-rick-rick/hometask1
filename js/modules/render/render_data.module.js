@@ -40,11 +40,7 @@ const tableButtonsData = [
 	{
 		role : 'archive',
 		pic : 'archive'
-	},
-	{
-		role : 'relete',
-		pic : 'trash'
-	}	
+	}
 ]
 
 const tableOfNotesHeadline = {
@@ -55,9 +51,15 @@ const tableOfNotesHeadline = {
 	deadlines : 'Deadlines'
 		
 }
+const tableOfQuantityHeadline = {
+	category : 'Note category',
+	active : 'Active',
+	archived : 'Archived'
+		
+}
 
 
 
 
-export {createNotePopupContent, tableOfNotesHeadline, tableButtonsData} 
+export {createNotePopupContent, tableOfNotesHeadline, tableButtonsData, tableOfQuantityHeadline} 
 
