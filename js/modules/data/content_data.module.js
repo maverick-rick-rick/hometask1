@@ -12,7 +12,7 @@ export let contentData = {
         created : 'September 22, 2022',
         category : 'Random thought',
         content : 'My neighbour have a bonsai tree...', 
-        deadlines : '17.09.2022/19.09.2022'
+        deadlines : 'Start: 12.03.2022\nEnd: 12.10.2022'
        },
        {
         name : 'Take a shower',
@@ -32,7 +32,7 @@ export let contentData = {
         name : 'To do',
         created : 'February 14, 2022',
         category : 'Random thought',
-        content : 'Lorem ipsum dolor', 
+        content : 'Ya bado bado', 
         deadlines : ''
        },
        {
@@ -46,15 +46,15 @@ export let contentData = {
         name : 'It`s awesome',
         created : 'August 12, 2022',
         category : 'Quote',
-        content : 'Me', 
+        content : 'Cartman', 
         deadlines : ''
        },
        {
         name : 'Something cool',
         created : 'October 17, 2022',
         category : 'Random thought',
-        content : '', 
-        deadlines : '12.12.2012/17.05.2023'
+        content : '=__=', 
+        deadlines : 'Start: 17.07.2022\nEnd: 18.10.2022'
        },
 
     ],
@@ -71,12 +71,12 @@ export let contentData = {
         created : 'September 22, 2022',
         category : 'Random thought',
         content : 'My neighbour have a bonsai tree...', 
-        deadlines : '17.09.2022/19.09.2022'
+        deadlines : 'Start: 22.05.2022\nEnd: 13.10.2022'
        },
        {
         name : 'Take a shower',
         created : 'September 17, 2022',
-        category : 'Task',
+        category : 'Idea',
         content : 'Or not...', 
         deadlines : ''
        },
@@ -84,27 +84,6 @@ export let contentData = {
         name : 'Winter is coming',
         created : 'September 14, 2022',
         category : 'Quote',
-        content : 'Eddard Stark', 
-        deadlines : ''
-       },
-       {
-        name : 'Winter is coming',
-        created : 'September 14, 2022',
-        category : 'Idea',
-        content : 'Eddard Stark', 
-        deadlines : ''
-       },
-       {
-        name : 'Winter is coming',
-        created : 'September 14, 2022',
-        category : 'Quote',
-        content : 'Eddard Stark', 
-        deadlines : ''
-       },
-       {
-        name : 'Winter is coming',
-        created : 'September 14, 2022',
-        category : 'Task',
         content : 'Eddard Stark', 
         deadlines : ''
        }

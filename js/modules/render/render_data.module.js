@@ -2,18 +2,19 @@
 
 const createNotePopupContent = {
     noteName : {
-				type: 'text',
-				idName : 'create_note_name',
-				placeholder : 'Type here...',
-				labelContent : 'Enter your note name',
-				required : true
-			},
+		type: 'text',
+		idName : 'create_note_name',
+		placeholder : 'Type here...',
+		labelContent : 'Enter your note name',
+		required : true
+	},
 		
 	noteCategory : {
 		name: 'create_note_category',
 		idName: 'create_note_category',
-		optionValues : ['Task', 'Thought', 'Idea', 'Quote'],
-		labelContent: 'Choose a category of your note'
+		optionValues : ['Task', 'Random thought', 'Idea', 'Quote'],
+		labelContent: 'Choose a category of your note', 
+		value : 'Task'
 	},
 
 	noteContent : {
